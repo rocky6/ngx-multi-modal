@@ -64,6 +64,10 @@ export class OtherModule {
 }
 ```
 
+## Usage
+
+
+
 ## License
 
 Copyright (c) 2017 rocky6. Licensed under the MIT License (MIT)
