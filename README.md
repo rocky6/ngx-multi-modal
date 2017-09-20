@@ -1,11 +1,12 @@
 # ngx-multi-modal - Angular 4 + Bootstrap 4 multi modal service
-
 [![npm version](https://badge.fury.io/js/ngx-multi-modal.svg)](https://badge.fury.io/js/ngx-multi-modal)
 [![Build Status](https://travis-ci.org/rocky6/ngx-multi-modal.svg?branch=master)](https://travis-ci.org/rocky6/ngx-multi-modal)
 [![Coverage Status](https://coveralls.io/repos/github/rocky6/ngx-multi-modal/badge.svg?branch=master)](https://coveralls.io/github/rocky6/ngx-multi-modal?branch=master)
 [![dependency Status](https://david-dm.org/rocky6/ngx-multi-modal/status.svg)](https://david-dm.org/rocky6/ngx-multi-modal)
 [![devDependency Status](https://david-dm.org/rocky6/ngx-multi-modal/dev-status.svg?branch=master)](https://david-dm.org/rocky6/ngx-multi-modal#info=devDependencies)
 [![Greenkeeper Badge](https://badges.greenkeeper.io/rocky6/ngx-multi-modal.svg)](https://greenkeeper.io/)
+
+Forked from [ng-bootstrap](https://github.com/ng-bootstrap/ng-bootstrap)'s modal service.
 
 ## Demo
 
