@@ -51,6 +51,28 @@ export class AppModule {
 }
 ```
 
+In the root level you can specify base settings to all modals inside app providing them to forRoot method.
+```js
+import { NgxMultiModalModule } from 'ngx-multi-modal';
+
+@NgModule({
+  declarations: [AppComponent, ...],
+  imports: [
+    NgxMultiModalModule.forRoot(
+      {
+        backdrop: false, // Whether a backdrop element should be created for a given modal (true by default)
+        container: '#modal_container', // CSS selector of an element to which to attach newly opened modal windows ('body' by default)
+        size: 'lg', // Size of a new modal window.
+        keyboard: false, // Whether to close the modal when escape key is pressed (true by default).
+        windowClass: '' // Custom class to append to the modal window
+      }
+    )],  
+  bootstrap: [AppComponent]
+})
+export class AppModule {
+}
+``` 
+
 Other modules in your application can simply import ` NgxMultiModalModule `:
 
 ```js
@@ -62,6 +84,42 @@ import { NgxMultiModalModule } from 'ngx-multi-modal';
 })
 export class OtherModule {
 }
+```
+
+## Example
+For detailed usage examples see demo app code.
+
+## Usage
+To use modals you have to inject `NgxModalStack` service.
+```js
+constructor(public modalService: NgxModalStack);
+```
+Via `NgxModalStack` service you gain full control over Modal Stack.
+
+You have three ways to open modal dialogs:
+```js
+/**
+* data: string - plain string which will be shown inside modal
+* options: NgxModalOptions (see NgxModalOptions interface for details)
+*/
+let ngxStringModal: StringModalRef = this.modalService.openFromString(data, this.options);
+
+/**
+* template - reference to ng-template
+* context - template context, should be used inside ng-template via let-* syntax
+* options: NgxModalOptions (see NgxModalOptions interface for details)
+*/
+let ngxTemplateModal: TemplateModalRef = this.modalService.openFromTemplate(template, context, this.options);
+// Template context can be accessed via 
+ngxTemplateModal.context;
+
+/**
+* TestModalComponent - component class (don't forget to register component inside ngModules entryComponents)
+* options: NgxModalOptions (see NgxModalOptions interface for details)
+*/
+let ngxComponentModal: ComponentModalRef = this.modalService.openFromComponent(TestModalComponent, this.options);
+// Component instance can be accessed via 
+ngxComponentModal.instance;
 ```
 
 ## License
