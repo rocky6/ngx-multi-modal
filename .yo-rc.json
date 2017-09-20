@@ -1,0 +1,29 @@
+{
+  "generator-ngx-library": {
+    "authorName": "rocky6",
+    "authorEmail": "rockyscripts@gmail.com",
+    "githubUsername": "rocky6",
+    "projectName": "ngx-multi-modal",
+    "projectVersion": "0.0.1",
+    "projectDescription": "Angular 4 + Bootstrap 4 multi modal service",
+    "projectKeywords": [
+      "ng",
+      "ngx",
+      "angular",
+      "angular4",
+      "bootstrap",
+      "bootstrap4",
+      "modal",
+      "multi-modal",
+      "popup"
+    ],
+    "ngPrefix": "ngx-multi-modal",
+    "ngVersion": "4.0.0",
+    "ngModules": [
+      "core",
+      "common"
+    ],
+    "useGreenkeeper": true,
+    "useCompodoc": false
+  }
+}
