@@ -1,7 +1,7 @@
 /**
  * Represent options available when opening new modal windows.
  */
-import { Injectable, Injector } from '@angular/core';
+import { ComponentFactoryResolver, Injectable, Injector } from '@angular/core';
 
 export interface NgxModalOptions {
 
@@ -15,6 +15,11 @@ export interface NgxModalOptions {
    * Injector to use for modal content.
    */
   injector?: Injector;
+
+  /**
+   * provide custom factory resolver for components which are defined in lazy modules
+   */
+  factoryResolver?: ComponentFactoryResolver;
 
   /**
    * Whether to close the modal when escape key is pressed (true by default).

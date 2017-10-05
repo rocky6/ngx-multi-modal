@@ -32,6 +32,7 @@ export class ComponentModalRef<ComponentType> extends NgxModalRef {
     // Load injectors and factories
     super(_options, _injector, _applicationRef, _windowFactory, _globalOptions);
 
+    _componentFactoryResolver = _options.factoryResolver || _componentFactoryResolver;
 
     const contentCmptFactory = _componentFactoryResolver.resolveComponentFactory<ComponentType>(_component);
     const modalContentInjector = ReflectiveInjector.resolveAndCreate(
