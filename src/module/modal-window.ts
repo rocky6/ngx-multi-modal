@@ -34,6 +34,7 @@ export class NgxModalWindow implements OnInit, // tslint:disable-line
 
   @Input() backdrop: boolean | string = true;
   @Input() keyboard = true;
+  @Input() dismissOnBackdropClick = true;
   @Input() size: string;
   @Input() windowClass: string;
 
@@ -44,7 +45,7 @@ export class NgxModalWindow implements OnInit, // tslint:disable-line
   constructor(private _elRef: ElementRef, private _renderer: Renderer2) {}
 
   backdropClick($event: any): void {
-    if (this.backdrop === true && this._elRef.nativeElement === $event.target) {
+    if (this.dismissOnBackdropClick && this.backdrop === true && this._elRef.nativeElement === $event.target) {
       this.dismiss(ModalDismissReasons.BACKDROP_CLICK);
     }
   }

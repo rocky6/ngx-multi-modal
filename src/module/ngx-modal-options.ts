@@ -27,6 +27,11 @@ export interface NgxModalOptions {
   keyboard?: boolean;
 
   /**
+   * Custom class to append to the modal window
+   */
+  dismissOnBackdropClick?: boolean;
+
+  /**
    * Size of a new modal window.
    */
   size?: 'sm' | 'lg';

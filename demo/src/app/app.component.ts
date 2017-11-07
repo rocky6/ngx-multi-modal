@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   public closeResult: string;
 
   public options: NgxModalOptions = {
+    
   };
 
   constructor(public modalService: NgxModalStack, private sanitizer: DomSanitizer) {

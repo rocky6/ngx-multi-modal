@@ -22,6 +22,7 @@ export class NgxModalGlobalOptions implements INgxModalGlobalOptions, NgxModalOp
   backdrop = true;
   container = 'body';
   keyboard?: boolean;
+  dismissOnBackdropClick?: boolean;
   size?: 'sm' | 'lg';
   windowClass?: string;
 
@@ -38,6 +39,10 @@ export class NgxModalGlobalOptions implements INgxModalGlobalOptions, NgxModalOp
 
       if (!isNullOrUndefined(options.keyboard)) {
         this.keyboard = options.keyboard;
+      }
+
+      if (!isNullOrUndefined(options.dismissOnBackdropClick)) {
+        this.dismissOnBackdropClick = options.dismissOnBackdropClick;
       }
 
       if (!isNullOrUndefined(options.size)) {

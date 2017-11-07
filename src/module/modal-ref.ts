@@ -57,7 +57,7 @@ export class NgxModalRef {
     this._containerEl.appendChild(this._windowCmptRef.location.nativeElement);
 
     // Apply Options to window
-    ['keyboard', 'size', 'windowClass'].forEach((optionName: string) => {
+    ['keyboard', 'size', 'windowClass', 'dismissOnBackdropClick'].forEach((optionName: string) => {
       if (!isNullOrUndefined(this._options[optionName])) {
         this._windowCmptRef.instance[optionName] = this._options[optionName];
       } else if (!isNullOrUndefined(this._globalOptions[optionName])) {
