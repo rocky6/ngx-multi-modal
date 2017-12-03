@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   public closeResult: string;
 
   public options: NgxModalOptions = {
-    
+
   };
 
   constructor(public modalService: NgxModalStack, private sanitizer: DomSanitizer) {
@@ -52,8 +52,10 @@ export class AppComponent implements OnInit {
   openFromTemplate(content) {
 
     const context = {
-      body: 'One fine body..',
-      customMethod: (param) => {console.log(param); }
+      body: 'One line body..',
+      customMethod: (param) => {console.log(param);},
+      close: () => {},
+      dismiss: () => {}
     };
 
     this.modalService.openFromTemplate(content, context, this.options);

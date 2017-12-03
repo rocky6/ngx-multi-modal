@@ -1,3 +1,8 @@
+<a name="2.3.3"></a>
+## [2.3.3](https://github.com/rocky6/ngx-multi-modal/compare/v2.3.2...v2.3.3) (2017-12-03)
+
+
+
 <a name="2.3.2"></a>
 ## [2.3.2](https://github.com/rocky6/ngx-multi-modal/compare/v2.2.0...v2.3.2) (2017-12-03)
 

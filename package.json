@@ -1,7 +1,7 @@
 {
   "name": "ngx-multi-modal",
   "description": "Angular 4 + Bootstrap 4 multi modal service",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "filename": "./src/ngx-multi-modal.js",
   "homepage": "http://github.com/rocky6/ngx-multi-modal",
   "author": {
