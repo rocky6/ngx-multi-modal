@@ -9,12 +9,12 @@ import { NgxMultiModalModule } from 'ngx-multi-modal';
   declarations: [
     AppComponent,
     TestModalComponent
-  ],
-  imports: [
-    BrowserModule,
-    NgxMultiModalModule.forRoot({backdrop: true, container: 'body', size: 'lg'})
-  ],
-  providers: [],
+    ],
+    imports: [
+      BrowserModule,
+      NgxMultiModalModule.forRoot({backdrop: true, container: 'body', size: 'lg'})
+    ],
+    providers: [],
   bootstrap: [AppComponent],
   entryComponents: [TestModalComponent]
 })
